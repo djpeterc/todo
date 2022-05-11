@@ -1,0 +1,18 @@
+<div class="form container">
+  <form class="row" [formGroup]="todoForm">
+    <div class="col-6">
+      <input formControlName="name" />
+    </div>
+
+    <div class="col-6">
+      <textarea formControlName="description"></textarea>
+    </div>
+
+    <div class="col-12">
+      <button (click)="onSubmit()" type="button"></button>
+    </div>
+  </form>
+</div>
+
+
+
